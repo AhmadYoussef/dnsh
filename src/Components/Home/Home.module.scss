@@ -1,0 +1,17 @@
+@import '../_assets/varabile/varabile.scss';
+.home{
+    .HeadImg{
+        overflow: hidden;
+        max-height: 60vh;
+        video{
+            display: block;
+            width: 100%;
+            margin-top: -8%;
+        }
+    }
+    .servicesContainer{
+        padding: 3rem;
+        background-color: $blue;
+    }
+}
+

@@ -1,0 +1,46 @@
+@import "../_assets/varabile/varabile.scss";
+.contact{
+    .contactText{
+        padding: 3rem;
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-between;
+        margin: 0 auto;
+        article{
+            width: 40%;
+            text-align: center;
+            &:first-of-type{
+                padding-top: 1rem ;
+                h1{
+                    color:$darkGreen;
+                    padding: 1rem;
+                }
+                p,a{
+                    padding: 1rem;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}   
+
+@media (max-width: 900px){
+    .contact{
+        .contactText{
+            flex-direction: column;
+            article{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .contact{
+        .contactText{
+            article{
+                width: 90%;
+            }
+        }
+    }
+}

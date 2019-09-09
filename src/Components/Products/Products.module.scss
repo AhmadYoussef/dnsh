@@ -1,0 +1,90 @@
+@import '../_assets/varabile/varabile.scss';
+.products{
+    background-color: $white;
+    padding-bottom: 3rem;
+    section{
+        max-width: 1600px;
+
+        width: 90%;
+        margin: 0 auto;
+        .pageInfo{
+            text-align: center;
+            padding: 2rem 15%;
+            color: $blue;
+            h1{
+                padding: 1rem;
+                font-size: 1.8rem;
+            }
+        }
+        .productsFig{
+            display: flex;
+            justify-content: center;
+            figure{
+                width: 30%;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                figcaption{
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    h3{
+                        color: $blue;
+                        padding: 1rem 0;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        color: gray;
+                    }
+                    .greenBtn{
+                        display: inline-block;
+                        font-size: .7rem;
+                        padding: .4rem 1rem;
+                        color: $blue;
+                        margin-top: auto;
+                        align-self: flex-start;
+                        border: 1px solid $blue;
+                        transition: background-color .3s ease-in-out;
+                        &:hover{
+                            color: $white;
+                            background-color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .products{
+        section{
+            .productsFig{
+                flex-direction: column;
+                width: 70%;
+                margin: 0 auto;
+                figure{
+                    width: unset;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px){
+    .products{
+        section{
+        width: 100%;
+        .pageInfo{
+            padding: 2rem 7%;
+        }
+            .productsFig{
+                width: 90%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,69 @@
+@import "../../_assets/varabile/varabile.scss";
+    .services{
+        max-width: 1600px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        color: $lightGreen;
+        .servicesPageInfo{
+            h1{
+                padding: 2rem 0;
+            }
+        }
+        .servicesCollection{
+            display: flex;
+            flex-wrap: wrap;
+            figure{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                .serviceImg{
+                    width: 8%;
+                    margin: 2rem 0;
+                }
+                figcaption{
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    p{
+                        color: $white;
+                        width: 90%;
+                        margin: 0 auto;
+                        padding: 1rem 0;
+                    }
+                    .greenBtn{
+                        display: inline-block;
+                    font-size: .7rem;
+                    padding: .4rem 1rem;
+                    color: $lightGreen;
+                    margin-top: auto;
+                    align-self: center;
+                    border: 1px solid $lightGreen;
+                    transition: background-color .3s ease-in-out;
+                    &:hover{
+                        color: $darkGreen;
+                        background-color: $lightGreen;
+                    }
+                }
+            }
+            }
+        }
+    }
+@media (max-width: 1000px){
+    .services{
+        width: 100%;
+        
+    }
+}
+@media (max-width: 700px){
+    .services{
+        .servicesCollection{
+            flex-direction: column;
+            align-items: center;
+            figure{
+                width: unset;
+            }
+        }
+    }
+}

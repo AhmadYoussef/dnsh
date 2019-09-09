@@ -1,0 +1,40 @@
+@import '../_assets/varabile/varabile.scss';
+.footer{
+    background-color: $blue;
+    text-align: center;
+    h1{
+        color: $white;
+        padding: 2rem 0;
+    }
+    a,p{
+        color: $white;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem;
+        li{
+            font-size: 0.8rem;  
+            padding:.61rem .61rem;
+            &:nth-of-type(1){
+                width: 1.8rem;
+            }
+            &:nth-of-type(2){
+                width: 2.4rem;
+            }
+            &:nth-of-type(3){
+                width: 2.2rem;
+            }
+        }
+    }
+    div{
+        padding:0.5rem ;
+        background-color: $darkBlue;
+        color:$lightGreen;
+        font-size: .8rem;
+        span{
+            padding: 0 0.3rem;
+        }
+    }
+}
