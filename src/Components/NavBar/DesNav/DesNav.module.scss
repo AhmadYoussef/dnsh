@@ -1,0 +1,36 @@
+@import '../../_assets/varabile/varabile.scss';
+
+.desNav{
+    display: flex;
+    list-style: none;
+    
+    li{
+        a{
+            padding: 1rem 1rem;
+            display: block;
+        }        
+        &.dropMenu{
+            position: relative;
+            ul{
+                background-color: $blue;
+                list-style: none;
+                display: none;
+                position: absolute;
+                z-index: 700;
+                a{
+                    font-size: .8rem;
+                    white-space: nowrap;
+                }
+            }
+            &:hover {
+                ul{
+                    display: block ;
+                    li:hover{
+                        background-color: $darkBlue;
+                    }
+                }
+            }
+        }
+
+    }
+}

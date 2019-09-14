@@ -1,0 +1,45 @@
+@import '../_assets/varabile/varabile.scss';
+.background{background-color: $blue;
+    h2,a{
+        color: rgb(255,255,255);
+    
+    }}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    .logoImg{
+        display: flex;
+        align-items: center;
+        div{
+            width: calc(70px + (100 - 70) * ((100vw - 300px) / (1850 - 300)));
+            padding-right: 1rem;
+        }
+    }
+}
+hr{
+    width: 95%;
+}
+.botNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    list-style: none;
+    li{
+        font-size: 0.8rem;  
+        padding:.61rem .61rem;
+        &:nth-of-type(2){
+            width: 1.8rem;
+        }
+        &:nth-of-type(3){
+            width: 2.4rem;
+        }
+        &:nth-of-type(4){
+            width: 2.2rem;
+        }
+    }
+}

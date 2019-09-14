@@ -1,0 +1,118 @@
+@import '../../_assets/varabile/varabile.scss';
+.productsLayout {
+	width: 100%;
+	margin: 0 auto;
+	padding: 3rem;
+	background-color: $darkWhite;
+	hr {
+		width: 50%;
+		height: 3px;
+		background-color: $blue;
+	}
+	.ProductsHeader {
+		text-align: center;
+		width: 70%;
+		margin: 1rem auto;
+		color: $blue;
+		h1 {
+			padding: 1rem 0;
+		}
+	}
+	.products {
+		display: flex;
+		justify-content: center;
+		figure {
+			width: 32%;
+			max-width: 370px;
+			position: relative;
+			padding-top: 5%;
+			margin: 0;
+			&:hover {
+				img {
+					opacity: 0.8;
+				}
+			}
+			&::before {
+				content: '';
+				display: block;
+				padding: 40%;
+			}
+			img {
+				object-fit: cover;
+				opacity: 0.6;
+				position: absolute;
+				/* margin: auto; */
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+			figcaption {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				h3 {
+					color: $blue;
+					margin-top: 3rem;
+				}
+				.bottomProducts {
+					padding: 50px 0;
+					width: 100%;
+					text-align: center;
+					background-color: rgba($blue, 0.3);
+				}
+				.ServiceBtn {
+					padding: 7px 24px;
+					border: 1px solid $blue;
+					color: $blue;
+					text-decoration: none;
+					font-size: 0.8rem;
+					&:hover {
+						color: $white;
+						background-color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.productsLayout {
+		width: 100%;
+		.ProductsHeader {
+			width: 85%;
+		}
+	}
+}
+@media (max-width: 850px) {
+	.productsLayout {
+		.products {
+			flex-direction: column;
+			align-items: center;
+			figure {
+				width: 100%;
+				margin: .5rem 0;
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.productsLayout {
+		.ProductsHeader {
+			width: unset;
+		}
+		.products {
+			figure {
+			}
+		}
+	}
+}

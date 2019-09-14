@@ -1,0 +1,32 @@
+@import "../../Components/_assets/varabile/varabile.scss";
+.formContact{
+    display: flex;
+    flex-direction: column;
+    input{
+        padding: .7rem;
+        border: 0;
+        box-shadow: 0 0 2px gray;
+        margin: .2rem;
+        width: 100%;
+        font-size: .8rem;
+        &[type="submit"]{
+            width: unset;
+            align-self: center;
+            background-color: $blue;
+            color: $white;
+            &:hover{
+                background-color: $darkBlue;
+            }
+        }
+    }
+    textarea{
+        padding: .7rem;
+        border: 0;
+        resize: none;
+        box-shadow: 0 0 2px gray;
+        margin: .2rem;
+        width: 100%;
+        font-size: .8rem;
+        font-family: 'Chivo', sans-serif;
+    }
+}

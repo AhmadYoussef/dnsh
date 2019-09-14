@@ -1,0 +1,68 @@
+@import "../_assets/varabile/varabile.scss";
+.serPruPage{
+    figure{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        figcaption{
+            margin-top: 30%;
+            display: inline-block;
+            color: $white;
+            background-color: rgba($blue, .7);
+            width: 100%;
+            padding: 4rem;
+            bottom: 0;
+            line-height: 1.7;
+            div{
+                max-width: 900px;
+                margin:  0 auto;
+                p{
+                    font-size: 1.2rem;
+
+                }
+            ul,ol{
+                font-size: 1rem
+            }
+            h2{
+                padding-bottom: 3rem;
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+        }
+    }
+    }
+}
+
+@media (max-width: 800px){
+    
+    .serPruPage{
+        figure{
+            figcaption{
+            div{
+                h1{
+                    font-size: 2.7rem;
+                    padding-bottom: 2rem;
+                }
+                p{
+                    font-size: 1.2
+                }
+            }
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .serPruPage{
+        figure{
+            figcaption{
+                margin-top: 0;
+                div{
+                h2{
+                    line-height: 4rem;
+                }
+            }
+            }
+        }
+    }
+}
